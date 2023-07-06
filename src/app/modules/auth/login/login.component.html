@@ -1,0 +1,23 @@
+<nz-layout class="login-outer">
+    <nz-content>
+        <div class="inner-content">
+            <form (submit)="login()" [formGroup]="loginForm" class="login-form" nz-form>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Пожалуйста введите ваше имя пользователя">
+                        <nz-input-group nzPrefixIcon="user">
+                            <input formControlName="username" nz-input placeholder="Имя пользователя" type="text"/>
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Пожалуйста введите ваш пароль">
+                        <nz-input-group nzPrefixIcon="lock">
+                            <input formControlName="password" nz-input placeholder="Пароль" type="password"/>
+                        </nz-input-group>
+                    </nz-form-control>
+                </nz-form-item>
+                <button class="login-button" nz-button nzType="primary">Войти</button>
+            </form>
+        </div>
+    </nz-content>
+</nz-layout>

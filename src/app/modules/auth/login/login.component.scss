@@ -1,0 +1,23 @@
+@import 'src/styles/base/variables';
+
+.login-outer {
+  height: 100vh;
+}
+
+.inner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  border-radius: $border-radius-1;
+  padding: 30px;
+  background: #fff;
+  width: 400px;
+}
+
+.login-button {
+  width: 100%;
+}
